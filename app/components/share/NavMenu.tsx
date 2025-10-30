@@ -36,9 +36,9 @@ const NavMenu = () => {
     ]
     return (
 
-        <div className='border-b border-b-gray-300 container gap-5 mx-auto px-14 flex items-center pt-10 justify-between '>
+        <div className='border-b border-b-gray-300 container gap-5 mx-auto text-white px-14 flex items-center py-5 justify-between '>
             <div className='flex items-center gap-8'>
-                <div><Link href='/' className='text-2xl font-semibold'>Asad<span className='text-red-500'>uzzaman</span></Link></div>
+                <div><Link href='/' className='text-2xl font-semibold'>Nan<span className='text-red-500'>cy</span></Link></div>
                 <div className='flex  text-lg font-medium'>
                     {
                         menu.map((item, idx) => (
