@@ -36,7 +36,7 @@ const NavMenu = () => {
     ]
     return (
 
-        <div className='border-b border-b-gray-300 container gap-5 mx-auto text-white px-14 flex items-center py-5 justify-between '>
+        <div className=' 2xl:container gap-5 mx-auto text-white 2xl:px-0 px-14 flex items-center py-5 justify-between '>
             <div className='flex items-center gap-8'>
                 <div><Link href='/' className='text-2xl font-semibold'>Nan<span className='text-red-500'>cy</span></Link></div>
                 <div className='flex  text-lg font-medium'>

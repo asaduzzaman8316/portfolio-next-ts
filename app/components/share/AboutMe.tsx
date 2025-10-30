@@ -54,12 +54,12 @@ const AboutMe = () => {
     })
 
     return (
-        <div className='h-screen flex gap-8 px-14 mx-auto'>
-            <div className='w-4/12  -translate-y-28 shadow-2xl bg-transparent'>
+        <div className='flex gap-24 px-14 mx-auto 2xl:container 2xl:px-0'>
+            <div className='2xl:w-3/12 lg:w-4/12   -translate-y-28 shadow-2xl bg-transparent'>
                 <Image
-                    className='h-160 rounded-md'
-                    width={400}
-                    height={0}
+                    className='rounded-md'
+                    width={2000}
+                    height={1000}
                     src={'/about-5.jpg'}
                     alt='about image'
                 />
