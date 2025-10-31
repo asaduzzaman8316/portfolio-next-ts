@@ -1,9 +1,12 @@
 import React from 'react'
+import AboutHero from './components/AboutHero'
+import Sixbox from './components/Sixbox'
 
 const page = () => {
   return (
     <div>
-      I am about page
+      <AboutHero />
+      <Sixbox />
     </div>
   )
 }
