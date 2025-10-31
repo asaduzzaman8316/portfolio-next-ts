@@ -4,12 +4,12 @@ import React from 'react'
 import Link from 'next/link';
 
 function SixCard() {
-    const cardtile: string[] = ["Best Prices & Offers", 'Wide Assortment', 'Free Delivery', 'Easy Returns', '100% Satisfaction', 'Great Daily Deal']
+    const cardtile = ["Best Prices & Offers", 'Wide Assortment', 'Free Delivery', 'Easy Returns', '100% Satisfaction', 'Great Daily Deal']
 
     return (
         <div className='grid grid-cols-3   gap-8 py-16'>
             {cardtile.map((item: string, idx: number) => (
-                <div key={idx} className='flex gap-10 flex-col items-center p-8 border rounded-md border-gray-300'>
+                <div key={idx} className='flex gap-10 flex-col items-center p-8 border rounded-md border-gray-300 hover:shadow-lg'>
                     <div>
                         <Image
                             width={100}
@@ -20,7 +20,7 @@ function SixCard() {
                     </div>
                     <div className='flex flex-col items-center gap-8'>
                         <h1 className='about-hero__title text-2xl font-semibold'>{item}</h1>
-                        <p className='text-gray-600 text-center'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                        <p className='text-gray-500 text-center'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
                         <Link
                             className='text-lg hover:underline text-green-500 hover:text-yellow-500 duration-500 transition-all'
                             href={'#'}>
