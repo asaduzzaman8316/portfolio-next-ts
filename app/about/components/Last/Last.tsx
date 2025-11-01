@@ -31,7 +31,7 @@ function Last() {
             className='bg-gray-100 rounded-md flex items-center gap-5 p-5'
             >
                 <Image
-                className='w-20'
+                className='w-20 hover:-translate-y-2 duration-500'
                 width={70}
                 height={20}
                 src={`/icon-${idx+1}.svg`}

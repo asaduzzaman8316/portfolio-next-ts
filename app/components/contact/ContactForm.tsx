@@ -11,7 +11,7 @@ function ContactForm() {
             <p className="text-xl text-gray-600 mt-8">I am available for freelance work. Connect with me via phone:</p>
             <h2 className="text-xl font-semibold mt-2 mb-8">011610 839202 <span className="text-gray-600 font-medium">or email: </span>asaduzzaman8316@gmail.com</h2>
             <form
-               onSubmit={handleSubmit}
+                onSubmit={handleSubmit}
                 className="flex flex-col gap-8" >
                 <input
                     className="outline-none border-2 border-gray-300 rounded-md px-6 py-3 focus:border-red-500 focus:text-green-500"
@@ -28,8 +28,8 @@ function ContactForm() {
                     placeholder="Your Message" />
                 <div>
                     <button
-                    type="submit"
-                        className="bg-[#F9004D] text-white px-6 py-3 text-xl rounded-md tracking-widest uppercase border-3 hover:text-black duration-500 ease-in-out hover:-translate-y-1 hover:bg-white  border-[#F9004D]">
+                        type="submit"
+                        className="bg-[#F9004D] text-white px-6 py-2 text-xl rounded-md tracking-widest uppercase border-3 hover:text-black duration-500 ease-in-out hover:-translate-y-2 hover:bg-white  border-[#F9004D]">
                         submit
                     </button>
                 </div>

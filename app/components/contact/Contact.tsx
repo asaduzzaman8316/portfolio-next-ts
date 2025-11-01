@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 function Contact() {
     return (
-        <div className='flex  justify-between w-[80%] mx-auto'>
+        <div className='flex  justify-between items-center w-[80%] mx-auto'>
             <div className='w-[50%]'>
                 <ContactForm />
             </div>
