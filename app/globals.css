@@ -28,4 +28,8 @@ body {
 }
 
 
+.logoCard{
+  will-change: transform, border-color;
+
+}
 
