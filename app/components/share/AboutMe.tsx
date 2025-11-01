@@ -71,7 +71,7 @@ const AboutMe = () => {
                     <p className='text-gray-600 text-lg text-justify
                     '>There are many variations of passages of Lorem Ipsum available, but the majority have suffered <a href="#">alteration</a> in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum,</p>
                 </div>
-                <div className='space-x-10 text-start text-2xl'>
+                <div className='space-x-10 text-start lg:text-xl 2xl:text-2xl'>
                     {
                         btns.map((btn, idx) => (
                             <button

@@ -38,11 +38,11 @@ const NavMenu = () => {
 
         <div className=' 2xl:container gap-5 mx-auto text-white 2xl:px-0 px-14 flex items-center py-5 justify-between '>
             <div className='flex items-center gap-8'>
-                <div><Link href='/' className='text-2xl font-semibold'>Nan<span className='text-red-500'>cy</span></Link></div>
-                <div className='flex  text-lg font-medium'>
+                <div><Link href='/' className='text-2xl  font-semibold'>Nan<span className='text-red-500'>cy</span></Link></div>
+                <div className='flex  text-lg font-medium '>
                     {
                         menu.map((item, idx) => (
-                            <div key={idx} className='hover:-translate-y-1 duration-500 ease-in-out'>
+                            <div key={idx} className='hover:-translate-y-1 animate- duration-500 ease-in-out'>
                                 <Link
                                     className=' px-4 py-1.5  rounded-md hover:text-red-500 duration-500 ease-in-out'
                                     href={item.navlink}>
