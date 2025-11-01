@@ -40,9 +40,9 @@ function ProjectCard() {
             {
                 card.map((item, idx) => (
                     <div key={idx} className='relative'>
-                        <div className='h-100 rounded-lg   overflow-hidden' >
+                        <div className='h-100 rounded-lg  hover:scale-110 duration-500 overflow-hidden' >
                             <Image
-                                className='rounded-lg '
+                                className='rounded-lg hover:blur-none blur-xs'
                                 width={400}
                                 height={100}
                                 src={item.src}
@@ -50,7 +50,7 @@ function ProjectCard() {
                             />
                         </div>
                         <div className={`absolute ${idx === 5 ? 'text-black' : 'text-white'} bottom-10 space-y-8 p-4 text-center rounded-lg left-28  bg-white/10 backdrop-blur-xs`}>
-                            <p className='text-lg text-gray-500 font-semibold'>Development</p>
+                            <p className='text-lg text-gray-300 font-semibold'>Development</p>
                             <h1 className='font-bold'>{item.title}</h1>
                             <a target='_blank' href={item.link}><Button title='view details' /></a>
                         </div>
