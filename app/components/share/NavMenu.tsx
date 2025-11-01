@@ -56,7 +56,7 @@ const NavMenu = () => {
 
             <div className='flex items-center gap-8'>
                 <Social />
-                <Button />
+                <Button title='buy now'/>
             </div>
         </div>
 
