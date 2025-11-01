@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import { FiSend } from 'react-icons/fi'
 
 function SubScribe() {
     return (

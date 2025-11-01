@@ -5,6 +5,7 @@ import Performance from './components/Performance Sec/Performance'
 import Status from './components/Status/Status'
 import Team from './components/OurTeam/Team'
 import SubScribe from './components/SubScribe/SubScribe'
+import Last from './components/Last/Last'
 
 const page = () => {
   return (
@@ -13,8 +14,9 @@ const page = () => {
       <Sixbox />
       <Performance />
       <Status />
-      <Team/>
-      <SubScribe/>
+      <Team />
+      <SubScribe />
+      <Last />
     </div>
   )
 }
