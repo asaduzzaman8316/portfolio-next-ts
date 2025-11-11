@@ -1,45 +1,53 @@
+"use client";
+
 import Image from 'next/image'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import Social from './Social'
+import { FaArrowUp } from 'react-icons/fa6'
 
 function Footer() {
-    return (
-        <div className='bg-gray-100 mt-16'>
-            <footer className="w-[80%] mx-auto py-10 flex justify-between">
-                <aside className='flex flex-col gap-10'>
-                    <Image
-                        width="200"
-                        height="50"
-                        src={'/logo.svg'}
-                        alt='logg'
-                        className="fill-current" />
+    const [show, setShow] = useState(false);
 
-                    <p className='text-2xl about-hero__title font-semibold'>
-                        Nest Industries Ltd.
-                        <br />
-                        Providing reliable product since 2020
-                    </p>
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setShow(window.scrollY > 300);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    return (
+        <div className='bg-gray-100 mt-16 relative'>
+            <footer className="container mx-auto">
+                <aside className='flex items-center justify-between gap-4 sm:gap-6 md:gap-10 py-6 px-4 sm:px-6 md:px-0 flex-wrap md:flex-nowrap '>
+                    <Image
+                        width={200}
+                        height={50}
+                        src={'/mlogo.png'}
+                        alt='logo'
+                        className="w-32 sm:w-40 h-auto"
+                    />
+                    <div className='flex-1'>
+                        <Social />
+                    </div>
+                    <p className='text-xs sm:text-sm md:text-base w-full md:w-auto text-center md:text-right'>Copyright © 2025 Asaduzzaman. All Rights Reserved.</p>
                 </aside>
-                <nav className='flex flex-col gap-4 text-lg font-semibold'>
-                    <h6 className="footer-title">Services</h6>
-                    <a className="link link-hover text-gray-600">Branding</a>
-                    <a className="link link-hover text-gray-600">Design</a>
-                    <a className="link link-hover text-gray-600">Marketing</a>
-                    <a className="link link-hover text-gray-600">Advertisement</a>
-                </nav>
-                <nav className='flex flex-col gap-4 text-lg font-semibold'>
-                    <h6 className="footer-title">Company</h6>
-                    <a className="link link-hover text-gray-600">About us</a>
-                    <a className="link link-hover text-gray-600">Contact</a>
-                    <a className="link link-hover text-gray-600">Jobs</a>
-                    <a className="link link-hover text-gray-600">Press kit</a>
-                </nav>
-                <nav className='flex flex-col gap-4 text-lg font-semibold'>
-                    <h6 className="footer-title">Legal</h6>
-                    <a className="link link-hover text-gray-500">Terms of use</a>
-                    <a className="link link-hover text-gray-500">Privacy policy</a>
-                    <a className="link link-hover text-gray-500">Cookie policy</a>
-                </nav>
             </footer>
+
+            {show && (
+                <button
+                    onClick={scrollToTop}
+                    aria-label="Go to top"
+                    className='fixed bottom-6 right-6  hover:bg-red-600 hover:text-white p-3 rounded-full shadow-lg transition-all duration-500 z-40 flex items-center justify-center'
+                >
+                    <FaArrowUp size={20} />
+                </button>
+            )}
         </div>
     )
 }

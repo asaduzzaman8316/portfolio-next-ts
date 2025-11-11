@@ -4,10 +4,10 @@ import ProjectCard from './ProjectCard'
 
 export default function Project() {
     return (
-        <div className='py-16 w-[80%] mx-auto'>
-            <ClienHeading title='My Latest Project' desc='There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.' />
+        <div className='py-16 container mx-auto'>
+            <ClienHeading title='My Latest Project' desc='The culmination of my latest skills and best thinking. See the results of my most recent, high-impact client collaboration.' />
 
-            {/* <ProjectCard /> */}
+            <ProjectCard />
         </div>
     )
 }

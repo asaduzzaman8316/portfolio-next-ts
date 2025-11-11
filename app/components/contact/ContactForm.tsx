@@ -6,7 +6,7 @@ function ContactForm() {
         e.preventDefault();
     }
     return (
-        <div className=" p-4">
+        <div className=" p-4 text-center">
             <h1 className="text-6xl font-bold">Hire Me.</h1>
             <p className="text-xl text-gray-600 mt-8">I am available for freelance work. Connect with me via phone:</p>
             <h2 className="text-xl font-semibold mt-2 mb-8">011610 839202 <span className="text-gray-600 font-medium">or email: </span>asaduzzaman8316@gmail.com</h2>

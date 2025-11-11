@@ -5,9 +5,9 @@ import Button from '../share/Button'
 function ProjectCard() {
     const card = [
         {
-            title: "PortFolio",
-            src: "/pro-01.png",
-            link: 'https://asaduzzaman8316.github.io/Portfolio/'
+            title: "E-Commarce",
+            src: "/asad-mart.png",
+            link: 'https://asad-mart.vercel.app/'
         },
         {
             title: "Tic-Tac-Toc Game",
@@ -36,7 +36,7 @@ function ProjectCard() {
         }
     ]
     return (
-        <div className='grid grid-cols-3  justify-between gap-10 mt-10 translate-x-6'>
+        <div className='grid lg:grid-cols-3 items-center justify-center  lg:justify-between gap-10 mt-10 lg:translate-x-6'>
             {
                 card.map((item, idx) => (
                     <div key={idx} className='relative'>
@@ -49,7 +49,7 @@ function ProjectCard() {
                                 alt=''
                             />
                         </div>
-                        <div className={`absolute ${idx === 5 ? 'text-black' : 'text-white'} bottom-10 space-y-8 p-4 text-center rounded-lg left-28  bg-white/10 backdrop-blur-xs`}>
+                        <div className={`absolute ${idx === 5 || idx === 0 ? 'text-black' : 'text-white'} bottom-10 space-y-8 p-4 text-center rounded-lg left-28  bg-white/10 backdrop-blur-xs`}>
                             <p className='text-lg text-gray-300 font-semibold'>Development</p>
                             <h1 className='font-bold'>{item.title}</h1>
                             <a target='_blank' href={item.link}><Button title='view details' /></a>

@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import AboutKey from '../AboutmeLIst/AboutKey'
 import { AboutProps } from '../types/types'
 
