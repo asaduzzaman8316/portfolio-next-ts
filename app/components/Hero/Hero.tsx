@@ -1,6 +1,5 @@
 import Image from "next/image"
 import TextType from "../Animation/TextType"
-import { gsap } from "gsap/gsap-core"
 
 const Hero = () => {
   return (

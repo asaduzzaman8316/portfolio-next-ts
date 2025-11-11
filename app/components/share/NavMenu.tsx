@@ -2,8 +2,6 @@ import Link from 'next/link';
 import Social from './Social';
 import Button from './Button';
 import HeaderBtn from './HeaderBtn';
-import Image from 'next/image';
-import { FaBarsStaggered } from 'react-icons/fa6';
 interface navmemu {
     name: string;
     navlink: string
