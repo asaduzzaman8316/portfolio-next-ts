@@ -35,45 +35,35 @@ const NavMenu = () => {
     return (
 
         <div className=' container gap-5 mx-auto text-gray-800  2xl:px-0 px-4  '>
-            <div className='hidden'>
+            <div className=''>
                 <div className='flex justify-between items-center py-4'>
                     <div className='flex items-center gap-8 relative'>
                         <div>
                             <HeaderBtn />
                         </div>
-                        <div className='flex  text-lg font-medium '>
-                            {
-                                menu.map((item, idx) => (
-                                    <div key={idx} className='hover:-translate-y-1 animate- duration-500 ease-in-out'>
-                                        <Link
-                                            className=' px-4 py-1.5  rounded-md hover:text-red-500 duration-500 ease-in-out'
-                                            href={item.navlink}>
-                                            {item.name}
-                                        </Link>
-                                    </div>
-                                ))
-                            }
+                        <div className='hidden md:block'>
+                            <div className='flex  text-lg font-medium'>
+                                {
+                                    menu.map((item, idx) => (
+                                        <div key={idx} className='hover:-translate-y-1 animate- duration-500 ease-in-out'>
+                                            <Link
+                                                className=' px-4 py-1.5  rounded-md hover:text-red-500 duration-500 ease-in-out'
+                                                href={item.navlink}>
+                                                {item.name}
+                                            </Link>
+                                        </div>
+                                    ))
+                                }
+                            </div>
                         </div>
                     </div>
 
                     <div className='flex items-center gap-8'>
-                        <Social />
+                        <div className='hidden md:block'>
+                            <Social />
+                        </div>
                         <Button title='Download Cv' />
                     </div>
-                </div>
-            </div>
-            <div className='flex justify-between items-center py-1'>
-                <Link href={'/'}>
-                    <Image
-                    className='w-40' 
-                    width={1000}
-                    height={1000}
-                    src={'/mlogo.png'}
-                    alt='mobile device logo, asaduzzaman8316'
-                    />
-                </Link>
-                <div>
-                    <button><FaBarsStaggered /></button>
                 </div>
             </div>
         </div>

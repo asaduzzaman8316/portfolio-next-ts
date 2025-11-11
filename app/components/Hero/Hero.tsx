@@ -12,7 +12,7 @@ const Hero = () => {
           src={'/heroimage1.png'}
           alt="hero image , Asaduzzaman8316, asaduzzaman8316"
         />
-        <div className="absolute top-2/4  lg:top-1/2 lg:-translate-y-1/2 md:top-2/4 w-full px-4 ">
+        <div className="absolute z-10 top-2/4  lg:top-1/2 lg:-translate-y-1/2 md:top-2/4 w-full px-4 ">
           <div className='flex flex-col justify-center'>
             <h1 className='text-sm sm:text-base md:text-lg lg:text-xl tracking-widest uppercase leading-6 sm:leading-8'>Font-End Web Devloper</h1>
             <div className="flex flex-col lg:flex-row gap-3 sm:gap-4 md:gap-5 mt-2 sm:mt-3 md:mt-4">
