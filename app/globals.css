@@ -6,9 +6,7 @@
   box-sizing: border-box;
 }
 
-.bg-image{
-  background-image: url('/bg.jpg');
-}
+
 
 /* Apply Inter (from next/font) as the default body font via the CSS variable
    provided by `Inter({ variable: '--font-inter' })` in `layout.tsx`. */
