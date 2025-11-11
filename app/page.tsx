@@ -9,12 +9,12 @@ import Contact from './components/contact/Contact'
 const page = () => {
   return (
     <>
-      <Hero />
+      {/* <Hero /> */}
       <div className='mt-10 '>
-        <AboutMe />
+        {/* <AboutMe />
         <My_Clien />
         <Project />
-        <Contact />
+        <Contact /> */}
       </div>
     </>
   )

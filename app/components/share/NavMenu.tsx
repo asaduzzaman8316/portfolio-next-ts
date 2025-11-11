@@ -3,6 +3,7 @@ import Social from './Social';
 import Button from './Button';
 import HeaderBtn from './HeaderBtn';
 import Image from 'next/image';
+import { FaBarsStaggered } from 'react-icons/fa6';
 interface navmemu {
     name: string;
     navlink: string
@@ -61,15 +62,18 @@ const NavMenu = () => {
                     </div>
                 </div>
             </div>
-            <div>
-                <div>
+            <div className='flex justify-between items-center py-1'>
+                <Link href={'/'}>
                     <Image
-                    className='w-24' 
+                    className='w-40' 
                     width={1000}
                     height={1000}
-                    src={'/logo2.png'}
+                    src={'/mlogo.png'}
                     alt='mobile device logo, asaduzzaman8316'
                     />
+                </Link>
+                <div>
+                    <button><FaBarsStaggered /></button>
                 </div>
             </div>
         </div>
