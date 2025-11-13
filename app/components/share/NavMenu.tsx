@@ -13,20 +13,20 @@ const NavMenu = () => {
             navlink: '/'
         },
         {
-            name: "Service",
-            navlink: '/service'
+            name: "Project",
+            navlink: '#project'
         },
         {
             name: "About",
-            navlink: "/about"
+            navlink: "#about"
         },
         {
             name: "Blogs",
-            navlink: "/blogs"
+            navlink: "#blogs"
         },
         {
             name: "Contact",
-            navlink: "/contact"
+            navlink: "#contact"
         },
 
     ]
@@ -60,7 +60,9 @@ const NavMenu = () => {
                         <div className='hidden md:block'>
                             <Social />
                         </div>
-                        <Button title='Download Cv' />
+                        <div className=''>
+                            <a href="/resume.pdf" download className='inline-block text-center hover:bg-red-600 px-4 py-1.5 rounded-md border-gray-200 border-2 shadow-sm duration-500 hover:-translate-y-1 hover:text-white bg-red-500 text-white'>Download Cv</a>
+                        </div>
                     </div>
                 </div>
             </div>

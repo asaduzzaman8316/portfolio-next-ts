@@ -39,17 +39,17 @@ function ProjectCard() {
         <div className='grid lg:grid-cols-3 items-center justify-center  lg:justify-between gap-10 mt-10 lg:translate-x-6'>
             {
                 card.map((item, idx) => (
-                    <div key={idx} className='relative'>
-                        <div className='h-100 rounded-lg  hover:scale-110 duration-500 overflow-hidden' >
+                    <div key={idx} className='relative border border-gray-200 lg:border-none rounded-md'>
+                        <div className='h-80 lg:h-100 rounded-lg  hover:scale-110 duration-500 overflow-hidden object-cover p-1' >
                             <Image
-                                className='rounded-lg hover:blur-none blur-xs'
+                                className='rounded-lg object-cover'
                                 width={400}
                                 height={100}
                                 src={item.src}
                                 alt=''
                             />
                         </div>
-                        <div className={`absolute ${idx === 5 || idx === 0 ? 'text-black' : 'text-white'} bottom-10 space-y-8 p-4 text-center rounded-lg left-28  bg-white/10 backdrop-blur-xs`}>
+                        <div className={`absolute ${idx === 5 || idx === 0 ? 'text-black' : 'text-white'} bottom-10 space-y-8 p-4 text-center rounded-lg lg:left-28  bg-white/10 backdrop-blur-xs left-18`}>
                             <p className='text-lg text-gray-300 font-semibold'>Development</p>
                             <h1 className='font-bold'>{item.title}</h1>
                             <a target='_blank' href={item.link}><Button title='view details' /></a>

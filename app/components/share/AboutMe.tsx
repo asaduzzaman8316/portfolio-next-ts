@@ -15,14 +15,6 @@ const AboutMe = () => {
             desc: "Writing clean, scalable, and maintainable front-end code."
         },
         {
-            name: "Tailwind CSS / Framer Motion",
-            desc: 'Creating modern UI with smooth animation and styling.'
-        },
-        {
-            name: "Web Performance Optimization",
-            desc: 'Boosting speed, UX, and Core Web Vitals.'
-        },
-        {
             name: 'API Integration (REST / JSON)',
             desc: 'Connecting front-end with real-time backend data.'
         }
@@ -83,7 +75,7 @@ const AboutMe = () => {
     })
 
     return (
-        <div className='flex flex-col lg:flex-row lg:gap-24 px-4 mx-auto lg:h-[700px] container 2xl:px-0'>
+        <div id='about' className='flex flex-col lg:flex-row lg:gap-24 px-4 mx-auto lg:h-[500px] container 2xl:px-0'>
             <div className='2xl:w-3/12 lg:w-4/12 w-6/12  -translate-y-28 lg:translate-x-0 translate-x-30'>
                 <Image
                     className='rounded-md shadow-2xl'
@@ -100,7 +92,7 @@ const AboutMe = () => {
                     <p className='text-gray-600 text-lg text-justify
                     '>I’m a Front-End Developer specializing in React, Next.js, TypeScript, and JavaScript. I create fast, responsive, and modern web applications focused on performance and great user experience. My passion is turning creative ideas into clean, efficient, and scalable code using the latest front-end technologies.</p>
                 </div>
-                <div className='space-x-10 lg:text-start text-center lg:text-xl 2xl:text-2xl'>
+                <div className='space-x-10 lg:text-start  text-center lg:text-xl 2xl:text-2xl'>
                     {
                         btns.map((btn, idx) => (
                             <button
